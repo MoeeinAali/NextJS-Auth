@@ -9,6 +9,7 @@ import {TextBox} from "@/app/_components/textbox";
 import {Button} from "@/app/_components/button";
 import Phone from "@/app/_assets/phone";
 import Eye from "@/app/_assets/eye";
+import {signinAction} from "@/app/_actions/auth.action";
 
 export const SignInForm: FC = () => {
     const {
@@ -23,12 +24,12 @@ export const SignInForm: FC = () => {
 
     const onSubmit = async (data: SignInModel) => {
         startTransition(async () => {
-            // const response = await signInAction(data);
-            console.log(data);
+            const response = await signinAction(data)
+            console.log(response);
         });
     };
     return (
-        <div className=" w-full">
+        <div className="mx-auto w-full">
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex flex-col gap-6 mt-6"
@@ -46,7 +47,7 @@ export const SignInForm: FC = () => {
                     name={"password"}
                     register={register}
                     errors={errors}
-                    type="number"
+                    type="password"
                     placeholder="رمز عبور"
                     label="رمز عبورت رو وارد کن"
                     icon={<Eye/>}
