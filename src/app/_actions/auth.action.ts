@@ -43,11 +43,13 @@ export async function signOutAction() {
         return null;
     }
     const session = await decryptSession(JSON.parse(sessionCookie));
-
     try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API}/api/identity/signout`, {
             method: "POST",
             body: JSON.stringify({sessionId: session.sessionId}),
+            headers: {
+                "Content-Type": "application/json",
+            }
         })
         if (response.ok) {
             cookieStore.delete("uranus-session")
@@ -55,8 +57,8 @@ export async function signOutAction() {
         return {isSuccess: true};
     } catch (e) {
         console.log(e)
-        return {isSuccess: false};
     }
+    return {isSuccess: false};
 }
 
 export async function setAuthCookieAction(user: UserResponse) {
