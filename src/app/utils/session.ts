@@ -1,0 +1,3 @@
+const JWT_SECRET = "bGKpbWwWGt+TAVYux34CWr5hyi0FUKNw/64DzQRZ3bk="
+
+
