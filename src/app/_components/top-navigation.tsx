@@ -1,6 +1,7 @@
 import Logo from "@/app/_assets/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import TopNavigationAccount from "@/app/_components/top-navigation-account";
 
 export default function TopNavigation() {
     return (
@@ -34,6 +35,7 @@ export default function TopNavigation() {
                     </li>
                 </ul>
             </div>
+            <TopNavigationAccount/>
         </nav>
     );
 }
