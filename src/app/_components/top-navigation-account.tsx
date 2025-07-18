@@ -1,22 +1,9 @@
-"use client"
+"use client";
 
-import {useEffect} from "react";
+import { useSessionStore } from "@/app/stores/auth.store";
 
 export default function TopNavigationAccount() {
+  const status = useSessionStore((state) => state.status);
 
-    useEffect(() => {
-        const fetchSession = async () => {
-            const response = await fetch("/api/auth/session")
-            if (response.ok) {
-                const data = await response.json()
-                console.log(data)
-            }
-        }
-        fetchSession()
-    }, []);
-    return (
-        <>
-
-        </>
-    );
+  return <>{status}</>;
 }

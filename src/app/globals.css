@@ -1,111 +1,109 @@
 @import "tailwindcss";
 
-
 :root {
-    --uranus-base-white: #fff;
-    --uranus-base-black: oklch(0 0 0 / 1);
+  --uranus-base-white: #fff;
+  --uranus-base-black: oklch(0 0 0 / 1);
 
-    --uranus-gray-blue-300: oklch(92% 0.15 210);
-    --uranus-gray-blue-400: oklch(85% 0.16 210);
-    --uranus-gray-blue-600: oklch(72% 0.14 210);
-    --uranus-gray-blue-700: oklch(60% 0.13 210);
-    --uranus-gray-blue-800: oklch(50% 0.11 210);
-    --uranus-gray-blue-850: oklch(40% 0.09 210);
-    --uranus-gray-blue-870: oklch(33% 0.08 210);
-    --uranus-gray-blue-900: oklch(28% 0.07 210);
+  --uranus-gray-blue-300: oklch(92% 0.15 210);
+  --uranus-gray-blue-400: oklch(85% 0.16 210);
+  --uranus-gray-blue-600: oklch(72% 0.14 210);
+  --uranus-gray-blue-700: oklch(60% 0.13 210);
+  --uranus-gray-blue-800: oklch(50% 0.11 210);
+  --uranus-gray-blue-850: oklch(40% 0.09 210);
+  --uranus-gray-blue-870: oklch(33% 0.08 210);
+  --uranus-gray-blue-900: oklch(28% 0.07 210);
 
-    --uranus-blue-600: oklch(0.57 0.21 205 / 1);
-    --uranus-primary: oklch(0.57 0.21 205 / 1);
-    --uranus-blue-700: oklch(0.51 0.2 205 / 1);
+  --uranus-blue-600: oklch(0.57 0.21 205 / 1);
+  --uranus-primary: oklch(0.57 0.21 205 / 1);
+  --uranus-blue-700: oklch(0.51 0.2 205 / 1);
 
-    --uranus-blue-light-400: oklch(0.76 0.14 210 / 1);
-    --uranus-blue-light-500: oklch(0.69 0.15 210 / 1);
+  --uranus-blue-light-400: oklch(0.76 0.14 210 / 1);
+  --uranus-blue-light-500: oklch(0.69 0.15 210 / 1);
 
-    --uranus-g-61-first: oklch(0.58 0.3 308 / 1);
-    --uranus-g-61-second: oklch(0.59 0.21 274 / 1);
-    --uranus-g-61-third: oklch(0.83 0.14 203 / 1);
+  --uranus-g-61-first: oklch(0.58 0.3 308 / 1);
+  --uranus-g-61-second: oklch(0.59 0.21 274 / 1);
+  --uranus-g-61-third: oklch(0.83 0.14 203 / 1);
 
-    --uranus-g-62-first: oklch(0.37 0.26 264 / 1);
-    --uranus-g-62-second: oklch(0.43 0.27 265 / 1);
-    --uranus-g-62-third: oklch(0.83 0.14 203 / 1);
+  --uranus-g-62-first: oklch(0.37 0.26 264 / 1);
+  --uranus-g-62-second: oklch(0.43 0.27 265 / 1);
+  --uranus-g-62-third: oklch(0.83 0.14 203 / 1);
 
-    --uranus-g-82-first: oklch(0.9 0.13 183 / 1);
-    --uranus-g-82-second: oklch(0.62 0.21 280 / 1);
+  --uranus-g-82-first: oklch(0.9 0.13 183 / 1);
+  --uranus-g-82-second: oklch(0.62 0.21 280 / 1);
 
-    --uranus-g-gray-first: oklch(0.26 0.05 274 / 1);
-    --uranus-g-gray-second: oklch(0.22 0.04 275 / 1);
+  --uranus-g-gray-first: oklch(0.26 0.05 274 / 1);
+  --uranus-g-gray-second: oklch(0.22 0.04 275 / 1);
 
-    --uranus-green-500: oklch(0.87 0.17 143 / 1);
-    --uranus-green-600: oklch(0.67 0.16 156 / 1);
-    --uranus-orange-500: oklch(0.75 0.17 62 / 1);
-    --uranus-orange-400: oklch(0.81 0.16 76 / 1);
+  --uranus-green-500: oklch(0.87 0.17 143 / 1);
+  --uranus-green-600: oklch(0.67 0.16 156 / 1);
+  --uranus-orange-500: oklch(0.75 0.17 62 / 1);
+  --uranus-orange-400: oklch(0.81 0.16 76 / 1);
 
-    --uranus-pink-500: oklch(0.67 0.23 342 / 1);
-    --uranus-rose-500: oklch(0.64 0.21 29 / 1);
+  --uranus-pink-500: oklch(0.67 0.23 342 / 1);
+  --uranus-rose-500: oklch(0.64 0.21 29 / 1);
 
-    --fade-speed: 0.4s;
+  --fade-speed: 0.4s;
 
-    --pattern-fg: color-mix(
-            in oklab,
-            var(--uranus-gray-blue-800) 10%,
-            transparent
-    );
+  --pattern-fg: color-mix(
+    in oklab,
+    var(--uranus-gray-blue-800) 10%,
+    transparent
+  );
 }
 
-
 @theme inline {
-    --font-*: initial;
+  --font-*: initial;
 
-    --color-*: initial;
+  --color-*: initial;
 
-    --color-white: var(--uranus-base-white);
-    --color-black: var(--uranus-base-black);
-    --color-primary: var(--uranus-blue-600);
-    --color-primary-700: var(--uranus-blue-700);
-    --color-secondary-300: var(--uranus-gray-blue-300);
-    --color-secondary-400: var(--uranus-gray-blue-400);
-    --color-secondary-600: var(--uranus-gray-blue-600);
-    --color-secondary-700: var(--uranus-gray-blue-700);
-    --color-secondary-800: var(--uranus-gray-blue-800);
-    --color-secondary-850: var(--uranus-gray-blue-850);
-    --color-secondary-870: var(--uranus-gray-blue-870);
-    --color-secondary-900: var(--uranus-gray-blue-900);
+  --color-white: var(--uranus-base-white);
+  --color-black: var(--uranus-base-black);
+  --color-primary: var(--uranus-blue-600);
+  --color-primary-700: var(--uranus-blue-700);
+  --color-secondary-300: var(--uranus-gray-blue-300);
+  --color-secondary-400: var(--uranus-gray-blue-400);
+  --color-secondary-600: var(--uranus-gray-blue-600);
+  --color-secondary-700: var(--uranus-gray-blue-700);
+  --color-secondary-800: var(--uranus-gray-blue-800);
+  --color-secondary-850: var(--uranus-gray-blue-850);
+  --color-secondary-870: var(--uranus-gray-blue-870);
+  --color-secondary-900: var(--uranus-gray-blue-900);
 
-    --color-success: var(--uranus-green-500);
-    --color-success-600: var(--uranus-green-600);
-    --color-warning: var(--uranus-orange-500);
-    --color-warning-400: var(--uranus-orange-400);
+  --color-success: var(--uranus-green-500);
+  --color-success-600: var(--uranus-green-600);
+  --color-warning: var(--uranus-orange-500);
+  --color-warning-400: var(--uranus-orange-400);
 
-    --color-info: var(--uranus-blue-light-500);
-    --color-info-400: var(--uranus-blue-light-400);
+  --color-info: var(--uranus-blue-light-500);
+  --color-info-400: var(--uranus-blue-light-400);
 
-    --color-error: var(--uranus-rose-500);
+  --color-error: var(--uranus-rose-500);
 }
 
 @layer base {
-    body {
-        @apply bg-secondary-900;
-        font-family: "yekanbakh";
-        color: var(--color-secondary-300);
+  body {
+    @apply bg-secondary-900;
+    font-family: "yekanbakh";
+    color: var(--color-secondary-300);
 
-        line-height: var(--text-base--line-height);
-        overflow-x: hidden;
-    }
+    line-height: var(--text-base--line-height);
+    overflow-x: hidden;
+  }
 
-    input[type="number"] {
-        -moz-appearance: none;
-        appearance: none;
-    }
+  input[type="number"] {
+    -moz-appearance: none;
+    appearance: none;
+  }
 
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        /* display: none; <- Crashes Chrome on hover */
-        -webkit-appearance: none;
-        margin: 0;
-        /* <-- Apparently some margin are still there even though it's hidden */
-    }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+  }
 }
 
 .debug {
-    border: 1px solid red;
+  border: 1px solid red;
 }
