@@ -5,12 +5,12 @@ import { useForm } from "react-hook-form";
 import { valibotResolver } from "@hookform/resolvers/valibot";
 import { SignInModel } from "../_types/auth.types";
 import { SignInSchema } from "../_types/auth.schema";
-import { TextBox } from "@/app/_components/textbox";
-import { Button } from "@/app/_components/button";
-import Phone from "@/app/_assets/phone";
-import Eye from "@/app/_assets/eye";
-import { signinAction } from "@/app/_actions/auth.action";
-import { useSessionStore } from "@/app/stores/auth.store";
+import { TextBox } from "@/ui/components/textbox";
+import { Button } from "@/ui/components/button";
+import Phone from "@/ui/assets/phone";
+import Eye from "@/ui/assets/eye";
+import { signInAction } from "@/lib/actions/auth.action";
+import { useSessionStore } from "@/lib/stores/auth.store";
 import { useRouter } from "next/navigation";
 
 export const SignInForm: FC = () => {
@@ -30,7 +30,7 @@ export const SignInForm: FC = () => {
 
   const onSubmit = async (data: SignInModel) => {
     startTransition(async () => {
-      const response = await signinAction(data);
+      const response = await signInAction(data);
       if (response.isSuccess) {
         updateSession();
         router.push("/dashboard/courses");

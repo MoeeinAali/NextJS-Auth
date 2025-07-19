@@ -1,12 +1,12 @@
 "use client";
 
-import { useSessionStore } from "@/app/stores/auth.store";
-import { Button } from "@/app/_components/button";
+import { useSessionStore } from "@/lib/stores/auth.store";
+import { Button } from "@/ui/components/button";
 import Image from "next/image";
 import { useTransition } from "react";
-import { signOutAction } from "@/app/_actions/auth.action";
+import { signOutAction } from "@/lib/actions/auth.action";
 import { useRouter } from "next/navigation";
-import { Loading } from "@/app/_components/loading";
+import { Loading } from "@/ui/components/loading";
 
 export default function TopNavigationAccount() {
   const status = useSessionStore((state) => state.status);

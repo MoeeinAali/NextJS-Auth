@@ -7,7 +7,7 @@ import {
   ComponentBase,
   RefinedMerge,
   Size,
-} from "../_types/component-base.type";
+} from "@/lib/types/component-base.type";
 import { Loading } from "./loading";
 
 export const styles = tv({

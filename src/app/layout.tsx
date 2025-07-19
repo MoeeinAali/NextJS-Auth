@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-import TopNavigation from "./_components/top-navigation";
+import TopNavigation from "@/ui/components/top-navigation";
 import { ReactNode } from "react";
 
 const yekanbakh = localFont({

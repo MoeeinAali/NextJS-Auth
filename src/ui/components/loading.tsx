@@ -5,7 +5,7 @@ import {
   ComponentBase,
   RefinedMerge,
   Size,
-} from "../_types/component-base.type";
+} from "@/lib/types/component-base.type";
 
 type LoadingVariants = VariantProps<typeof styles>;
 type LoadingProps = RefinedMerge<LoadingVariants, ComponentBase> & {

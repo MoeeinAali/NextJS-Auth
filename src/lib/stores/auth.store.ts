@@ -1,4 +1,4 @@
-import { UserSession } from "@/app/_types/auth.types";
+import { UserSession } from "@/lib/types/auth.type";
 import { create } from "zustand/react";
 
 type AuthStatus = "loading" | "authenticated" | "unauthenticated";

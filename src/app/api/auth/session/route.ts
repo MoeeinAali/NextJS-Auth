@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { decryptSession } from "@/app/utils/session";
+import { decryptSession } from "@/lib/utils/session.utils";
 import { NextResponse } from "next/server";
 
 export async function GET() {

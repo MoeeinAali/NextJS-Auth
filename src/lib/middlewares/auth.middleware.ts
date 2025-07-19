@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { decryptSession } from "@/app/utils/session";
+import { decryptSession } from "@/lib/utils/session.utils";
 import { cookies } from "next/headers";
-import { setAuthCookieAction } from "@/app/_actions/auth.action";
-import { UserResponse } from "@/app/_types/auth.types";
+import { setAuthCookieAction } from "@/lib/actions/auth.action";
+import { UserResponse } from "@/lib/types/auth.type";
 
 const authRoutes = ["/signin"];
 const protectedRoutes = ["/dashboard"];

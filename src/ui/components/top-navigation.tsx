@@ -1,7 +1,7 @@
-import Logo from "@/app/_assets/logo.svg";
+import Logo from "@/ui/assets/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import TopNavigationAccount from "@/app/_components/top-navigation-account";
+import TopNavigationAccount from "@/ui/components/top-navigation-account";
 
 export default function TopNavigation() {
   return (

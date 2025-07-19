@@ -10,7 +10,7 @@ import {
   UseFormRegister,
 } from "react-hook-form";
 import React from "react";
-import { ComponentBase, RefinedMerge } from "../_types/component-base.type";
+import { ComponentBase, RefinedMerge } from "@/lib/types/component-base.type";
 
 export type TextboxType = "text" | "number" | "email" | "password";
 type TextboxVariants = VariantProps<typeof styles>;

@@ -1,4 +1,4 @@
-import Logo from "@/app/_assets/logo.svg";
+import Logo from "@/ui/assets/logo.svg";
 import { ReactNode } from "react";
 import Image from "next/image";
 

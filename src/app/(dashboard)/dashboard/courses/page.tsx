@@ -1,6 +1,6 @@
 import { Course } from "@/app/(dashboard)/dashboard/courses/_types/courses.type";
 import { unauthorized } from "next/navigation";
-import { getSession } from "@/app/utils/session";
+import { getSession } from "@/lib/utils/session.utils";
 
 async function getCourses(): Promise<Course[]> {
   const session = await getSession();

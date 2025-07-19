@@ -1,4 +1,4 @@
-import { UserSession } from "@/app/_types/auth.types";
+import { UserSession } from "@/lib/types/auth.type";
 import { CompactEncrypt, compactDecrypt } from "jose";
 import { cookies } from "next/headers";
 
